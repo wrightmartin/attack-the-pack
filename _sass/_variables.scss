@@ -1,0 +1,41 @@
+$open-sans: 'open sans', "Helvetica Neue", Arial, Helvetica, serif;
+$futura: 'futura-pt', "Helvetica Neue", Arial, Helvetica, serif;
+
+$body_typeface: $futura;
+$body_typeface_semibold: 500;
+$body_typeface_bold: 700;
+$heading_typeface: $futura;
+$heading_typeface_bold: 700;
+
+$colour_blue: #0bbdcf;
+$colour_red: #ec4545;
+$colour_light_blue: #AAF8F7;
+$colour_light_yellow: #EEF8D0;
+$colour_white: #FFFFFF;
+$colour_off_white: #F4F4F4;
+$colour_lighter_grey: #E9E9E9;
+$colour_light_grey: #D8D8D8;
+$colour_grey: #CCCCCC;
+$colour_mid_grey: #999999;
+$colour_dark_grey: #666666;
+$colour_black: #424242;
+
+$colour_primary: $colour_red;
+$colour_secondary: $colour_blue;
+
+$colour_background: $colour_white;
+$colour_links: $colour_red;
+$colour_borders: $colour_lighter_grey;
+
+$border_radius: 5px;
+
+$size_font-base: 18px;
+
+$giant_screen: 67.5em;
+$large_screen: 56em;
+$medium_screen: 44em;
+$high_dpi_screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi';
+
+$animation-short: 0.2s ease-out;
+
+
