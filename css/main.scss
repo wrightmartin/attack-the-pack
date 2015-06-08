@@ -15,6 +15,15 @@ html {
 
 body {
     background-color: $colour_background;
+    background: rgba(170,248,247,1);
+    background: -moz-linear-gradient(-45deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(170,248,247,1)), color-stop(100%, rgba(238,248,208,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
+    background: linear-gradient(135deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaf8f7', endColorstr='#eef8d0', GradientType=1 );
+    background-size: cover;
     color: $colour_black;
     font-family: $body_typeface;
     font-size: 1.125em; //18px
@@ -42,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
     margin-bottom: 0.33em;
     margin-top: 0;
-    font-weight: $heading_typeface_bold;
+    font-weight: normal;
+    font-style: italic;
 }
 
 h1,
@@ -117,7 +127,8 @@ hr {
 
 audio,
 video,
-img {
+img,
+svg {
     max-width: 100%;
     height: auto;
 }
@@ -252,3 +263,121 @@ tfoot {
 @import 'components';
 @import 'site-header';
 @import 'site-footer';
+
+.atp-logo {
+    max-height: 417px;
+    max-width: 317px;
+    margin: 0 auto;
+}
+
+.hero {
+    @include clearfix;
+    width: 100%;
+}
+
+.hero__primary {
+    margin-bottom: 1.5em;
+    @media (min-width: 50em) {
+        width: 30%;
+        float: left;
+        margin-right: 3%;
+        margin-bottom: 0;
+    }
+}
+
+.hero__secondary {
+    @media (min-width: 50em) {
+        width: 67%;
+        float: left;
+        text-align: left;
+    }
+
+    h2 {
+        position: relative;
+        top: 27px;
+        font-size: 1.5em;
+        @media (min-width: 33em) {
+            top: -7px;
+            font-size: 1.777777778em;
+        }
+        @media (min-width: 67.777777778em) {
+            font-size: 2em;
+        }
+    }
+}
+
+.email-signup {
+    margin-top: 5em;
+    margin: 5em auto 0;
+    @media (min-width: 50em) {
+        margin: 2em 0 0;
+    }
+    max-width: 500px;
+    label {
+        display: block;
+        margin-bottom: 0;
+        font-size: 1.166666667em;
+    }
+
+    .email {
+        border:0;
+        padding: 0.75em;
+        width: 100%;
+        @media (min-width: 20em) {
+            width: 70%;
+            border-bottom-right-radius:0;
+            border-top-right-radius:0;
+            display: inline-block;
+        }
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 1em;
+        @media (min-width: 20em) {
+            width: 30%;
+            display: inline-block;
+            border-bottom-left-radius:0;
+            border-top-left-radius:0;
+            padding: 0.75em 0;
+            text-align: center;
+        }
+    }
+}
+
+
+.site-footer {
+    background-color: #424242;
+    color: #fff;
+    padding: 2em 0;
+    h2 {
+        color: #fff;
+        text-decoration: none;
+    }
+    a {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.777777778em;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $colour_light_blue;
+        }
+    }
+}
+
+.icon--twitter {
+    margin-left: 2em;
+    position: relative;
+    top: 4px;
+    svg {
+        height: 44px;
+        width: 44px;
+        @media (min-width: 27em) {
+            height: 21px;
+            width: 21px;
+        }
+    }
+
+}
