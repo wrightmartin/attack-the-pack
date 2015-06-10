@@ -3,7 +3,7 @@ title: Attack the Pack
 email: hello@attackthepack.com
 description: > # this means to ignore newlines until "baseurl:"
   A card game that brings the beautifully brutal experience of professional bike racing to your jersey pocket.
-baseurl: "/attack-the-pack" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://attackthepack.com" # the base hostname & protocol for your site
 twitter_username: atpcardgame
 
