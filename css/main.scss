@@ -275,7 +275,6 @@ tfoot {
 .atp-logo {
     max-height: 417px;
     max-width: 317px;
-    margin: 0 auto;
 }
 
 .hero {
@@ -287,17 +286,11 @@ tfoot {
 
 .hero__primary {
     margin-bottom: 1.5em;
-    @media (min-width: 50em) {
-        width: 30%;
-        float: left;
-        margin-right: 3%;
-        margin-bottom: 0;
-    }
 }
 
 .hero__secondary {
-    @media (min-width: 50em) {
-        width: 67%;
+    @media (min-width: 40em) {
+        width: 60%;
         float: left;
         text-align: left;
     }
@@ -306,10 +299,17 @@ tfoot {
         position: relative;
         top: 27px;
         font-size: 1.777em;
+        background-color: $colour_red;
+        display: inline;
+        padding: 0 0.33em;
         color: #fff;
-        @media (min-width: 33em) {
+        @media (min-width: 40em) {
+            background-color: transparent;
+            display: block;
+            color: $colour_black;
             top: -7px;
             font-size: 2em;
+            padding: 0;
         }
         @media (min-width: 67.777777778em) {
             font-size: 2.5em;
@@ -318,12 +318,7 @@ tfoot {
 }
 
 .secondary__wrapper {
-    background-color: $colour_red;
-    padding: 1.5em 2em 3em;
-    border-radius: 13px;
-    @media (min-width: 33em) {
-        padding: 3em;
-    }
+
 }
 
 .email-signup {
@@ -337,7 +332,6 @@ tfoot {
         display: block;
         margin-bottom: 0;
         font-size: 1.166666667em;
-        color: rgba(255,255,255,0.8);
     }
 
     .email {
@@ -373,14 +367,9 @@ tfoot {
     color: #fff;
     padding: 1em 0;
     width: auto;
-    h2 {
-        color: #fff;
-        text-decoration: none;
-    }
     a {
-        color: $colour_black;
         font-size: 0.777777778em;
-        text-decoration: underline;
+        color: $colour_black;
     }
 }
 
