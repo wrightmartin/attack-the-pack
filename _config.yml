@@ -1,10 +1,10 @@
 # Site settings
 title: Attack the Pack
-email: your-email@domain.com
+email: hello@attackthepack.com
 description: > # this means to ignore newlines until "baseurl:"
   A card game that brings the beautifully brutal experience of professional bike racing to your jersey pocket.
 baseurl: "/attack-the-pack" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://attackthepack.com" # the base hostname & protocol for your site
 twitter_username: atpcardgame
 
 # Build settings

@@ -64,10 +64,12 @@
 
 .button--secondary {
     background-color: $colour_secondary;
+    color: $colour_black;
     &:hover,
     &:active,
     &:focus {
         background-color: darken($colour_secondary, 5%);
+        color: $colour_black;
     }
 }
 

@@ -11,9 +11,6 @@
 
 html {
     height: 100%;
-}
-
-body {
     background-color: $colour_background;
     background: rgba(170,248,247,1);
     background: -moz-linear-gradient(-45deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
@@ -24,6 +21,16 @@ body {
     background: linear-gradient(135deg, rgba(170,248,247,1) 0%, rgba(238,248,208,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaf8f7', endColorstr='#eef8d0', GradientType=1 );
     background-size: cover;
+}
+
+body {
+    background-image: url(../assets/images/big-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    z-index: 1;
+    min-height: 100%;
+    height: 100%;
     color: $colour_black;
     font-family: $body_typeface;
     font-size: 1.125em; //18px
@@ -51,8 +58,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
     margin-bottom: 0.33em;
     margin-top: 0;
-    font-weight: normal;
+    font-weight: bold;
     font-style: italic;
+    text-transform: uppercase;
 }
 
 h1,
@@ -273,6 +281,8 @@ tfoot {
 .hero {
     @include clearfix;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .hero__primary {
@@ -295,14 +305,24 @@ tfoot {
     h2 {
         position: relative;
         top: 27px;
-        font-size: 1.5em;
+        font-size: 1.777em;
+        color: #fff;
         @media (min-width: 33em) {
             top: -7px;
-            font-size: 1.777777778em;
-        }
-        @media (min-width: 67.777777778em) {
             font-size: 2em;
         }
+        @media (min-width: 67.777777778em) {
+            font-size: 2.5em;
+        }
+    }
+}
+
+.secondary__wrapper {
+    background-color: $colour_red;
+    padding: 1.5em 2em 3em;
+    border-radius: 13px;
+    @media (min-width: 33em) {
+        padding: 3em;
     }
 }
 
@@ -317,12 +337,15 @@ tfoot {
         display: block;
         margin-bottom: 0;
         font-size: 1.166666667em;
+        color: rgba(255,255,255,0.8);
     }
 
     .email {
         border:0;
         padding: 0.75em;
         width: 100%;
+        min-height: 50px;
+        margin-top: 1em;
         @media (min-width: 20em) {
             width: 70%;
             border-bottom-right-radius:0;
@@ -347,23 +370,17 @@ tfoot {
 
 
 .site-footer {
-    background-color: #424242;
     color: #fff;
-    padding: 2em 0;
+    padding: 1em 0;
+    width: auto;
     h2 {
         color: #fff;
         text-decoration: none;
     }
     a {
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
+        color: $colour_black;
         font-size: 0.777777778em;
-        &:hover,
-        &:active,
-        &:focus {
-            color: $colour_light_blue;
-        }
+        text-decoration: underline;
     }
 }
 
