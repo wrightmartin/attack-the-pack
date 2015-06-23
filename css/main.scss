@@ -299,7 +299,7 @@ tfoot {
         position: relative;
         top: 27px;
         font-size: 1.777em;
-        background-color: $colour_red;
+        background-color: $colour_yellow;
         display: inline;
         padding: 0 0.33em;
         color: #fff;
@@ -378,12 +378,8 @@ tfoot {
     position: relative;
     top: 4px;
     svg {
-        height: 44px;
-        width: 44px;
-        @media (min-width: 27em) {
-            height: 21px;
-            width: 21px;
-        }
+        height: 21px;
+        width: 21px;
     }
 
 }
