@@ -374,7 +374,7 @@ tfoot {
 }
 
 .icon--twitter {
-    margin-left: 2em;
+    margin-right: 1.5em;
     position: relative;
     top: 4px;
     svg {
@@ -386,4 +386,24 @@ tfoot {
         }
     }
 
+}
+
+.icon--kickstarter {
+    margin-right: 1.5em;
+    position: relative;
+    top: 4px;
+    svg {
+        height: 19px;
+        width: 159px;
+    }
+}
+
+.icon--facebook {
+    margin-right: 1.5em;
+    position: relative;
+    top: 4px;
+    svg {
+        height: 19px;
+        width: 19px;
+    }
 }
