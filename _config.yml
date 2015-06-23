@@ -4,7 +4,7 @@ email: hello@attackthepack.com
 description: > # this means to ignore newlines until "baseurl:"
   The card game that brings the experience of pro bike racing to your jersey pocket is live on Kickstarter!
 siteblurb: > # this means to ignore newlines until "baseurl:"
-  The card game that brings the experience of pro bike racing to your jersey pocket is <a href="https://www.kickstarter.com/projects/attackthepack/attack-the-pack-the-cycling-card-game">live on Kickstarter!</a>
+  The card game that brings the experience of pro bike racing to your jersey pocket now <a href="https://www.kickstarter.com/projects/attackthepack/attack-the-pack-the-cycling-card-game">live on Kickstarter!</a>
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://attackthepack.com" # the base hostname & protocol for your site
 twitter_username: atpcardgame
